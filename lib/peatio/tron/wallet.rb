@@ -3,7 +3,7 @@ module Peatio
     class Wallet < Peatio::Wallet::Abstract
       include Encryption
 
-      DEFAULT_FEE = { fee_limit: 1000000 }
+      DEFAULT_FEE = { fee_limit: 2000000 }
       DEFAULT_FEATURES = { skip_deposit_collection: false }.freeze
 
       def initialize(custom_features = {})
